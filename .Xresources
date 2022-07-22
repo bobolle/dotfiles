@@ -1,0 +1,5 @@
+URxvt.font:				xft:Bitstream Vera Sans Mono:size=11
+URxvt.scrollBar:		false
+URxvt.secondaryScroll:	true
+URxvt.foreground:		#eaeaea
+URxvt.background:		#000000
