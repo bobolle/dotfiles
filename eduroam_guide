@@ -1,0 +1,30 @@
+prerequisites:
+    netctl
+    wpa_supplicant
+    server- and client certificates
+
+(1)
+
+ move private certificate to /etc/netctl/*.p12
+ move CA certificate to /etc/ca-certificates/trust-source/anchors/*.crt
+ run trust extract-compat
+ create netctl profile:
+    Description='Eduroam connection'
+    Interface=wlan0
+    Connection=wireless
+    Security='wpa-configsection'
+    IP='dhcp'
+    WPAConfigSection=(
+        'ssid="eduroam"'
+        'key_mgmt=WPA-EAP'
+        'eap=TLS'
+        'proto=WPA RSN'
+        'identity="ABCD0123@ad.umu.se"'
+        'private_key="/etc/netctl/umu_eduroam_ABCD0123.p12"'
+        'private_key_passwd="YOURPASSWORD"'
+        'ca_cert="/etc/ca-certificates/extracted/cadir/UmU_eduroam_MasterRoot_CA.pem"'
+        'ca_cert2="/etc/ca-certificates/extracted/cadir/UmU_eduroam_MasterRoot_CA.pem"'
+    )
+
+ run netctl eduroam start
+ make sure interface is down: ip link set interface down
