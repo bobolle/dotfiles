@@ -2,11 +2,23 @@ set $mod Mod1
 
 font pango:Liberation Mono 14px
 
-default_border pixel 2
-focus_follows_mouse no
+default_border pixel 1
+#for_window [class="Chromium"] border none
+client.focused #4c7899 #285577 #ffffff #2e9ef4 #aaaaff
 
-gaps inner 6
+focus_follows_mouse no
+focus_wrapping no
+mouse_warping none
+
+show_marks yes
+
+gaps inner 0
 gaps outer 0
+
+# start an application
+bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+y exec --no-startup-id discord
+bindsym $mod+b exec --no-startup-id chromium
 
 exec --no-startup-id xss-lock --transfer-sleep-lock
 
@@ -22,11 +34,6 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl s 10%-
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
-
-# start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+y exec --no-startup-id discord
-bindsym $mod+b exec --no-startup-id chromium
 
 # kill focused window
 bindsym $mod+Shift+q kill

@@ -1,5 +1,27 @@
-URxvt.font:				xft:Bitstream Vera Sans Mono:size=11
-URxvt.scrollBar:		false
-URxvt.secondaryScroll:	true
-URxvt.foreground:		#eaeaea
-URxvt.background:		#000000
+Xft.dpi: 96
+Xft.antialias: 1
+Xft.autohint: 0
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+Xft.rgba: rgb
+
+URxvt*scrollBar: 	false
+URxvt*scrollWithBuffer: 	true
+URxvt*saveLines: 	5000
+URxvt*termName: 	rxvt-unicode-256color
+URxvt*font: 		xft:Liberation Mono:pixelsize=14
+URxvt*boldFont: 		xft:Liberation Mono:pixelsize=14
+URxvt*letterSpace:  -1
+URxvt*lineSpace:    0
+URxvt*internalBorder: 2
+URxvt*externalBorder: 0
+
+URxvt*colorUL:  #ffffff
+
+URxvt*transparent:  false
+!URxvt*shading:      15
+
+URxvt*background: #000000
+URxvt*foreground: #ffffff
+
+Xcursor.size: 16
