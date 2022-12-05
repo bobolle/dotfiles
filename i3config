@@ -1,6 +1,6 @@
 set $mod Mod1
 
-font pango:Liberation Mono 14px
+font pango:Liberation Mono 15px
 
 default_border pixel 1
 #for_window [class="Chromium"] border none

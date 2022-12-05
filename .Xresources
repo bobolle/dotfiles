@@ -1,5 +1,5 @@
 Xft.dpi: 96
-Xft.antialias: 1
+Xft.antialias: true
 Xft.autohint: 0
 Xft.hinting: 1
 Xft.hintstyle: hintfull
@@ -9,8 +9,8 @@ URxvt*scrollBar: 	false
 URxvt*scrollWithBuffer: 	true
 URxvt*saveLines: 	5000
 URxvt*termName: 	rxvt-unicode-256color
-URxvt*font: 		xft:Liberation Mono:pixelsize=14
-URxvt*boldFont: 		xft:Liberation Mono:pixelsize=14
+URxvt*font: 		xft:Liberation Mono:pixelsize=15
+URxvt*boldFont: 		xft:Liberation Mono:pixelsize=15
 URxvt*letterSpace:  -1
 URxvt*lineSpace:    0
 URxvt*internalBorder: 2
@@ -21,7 +21,36 @@ URxvt*colorUL:  #ffffff
 URxvt*transparent:  false
 !URxvt*shading:      15
 
-URxvt*background: #000000
-URxvt*foreground: #ffffff
+Xcursor.theme: XCursor-Pro-Dark
+Xcursor.size: 22
 
-Xcursor.size: 16
+!URxvt*background: #000000
+!URxvt*foreground: #ffffff
+
+!black
+URxvt.color0:  #000000
+URxvt.color8:  #2B2B2B
+!red
+URxvt.color1:  #A5372E
+URxvt.color9:  #E06C5C 
+!green
+URxvt.color2:  #4A663C 
+URxvt.color10: #7B996C
+!yellow
+URxvt.color3:  #7C5618
+URxvt.color11: #B38849
+!blue
+URxvt.color4:  #566060
+URxvt.color12: #889393
+!magenta
+URxvt.color5:  #8E4948
+URxvt.color13: #C67C78
+!cyan
+URxvt.color6:  #6D5B42
+URxvt.color14: #A28D73
+!white
+URxvt.color7:  #8D8D8D
+URxvt.color15: #C6C6C6
+
+urxvt.background: #111111 
+urxvt.foreground: 15
