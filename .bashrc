@@ -6,15 +6,14 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-alias vi='nvim'
-alias vim='nvim'
-alias gcc='gcc -Wall -std=c99'
+alias vi='vim'
+alias grep='grep --color=auto'
 
 bind 'set completion-ignore-case on'
 
-export EDITOR="nvim"
-export TERMINAL="urxvt"
-export TERM="screen-256color"
+export EDITOR="vim"
 export BROWSER="chromium"
+export PICO_SDK_PATH="$HOME/projects/pico-sdk"
+export PATH=$PATH:~/bin
 
-PS1='[\u@\h \W]\$ '
+PS1='[\u@\h \[\e[1m\]\W\[\e[0m\]]\$ '
