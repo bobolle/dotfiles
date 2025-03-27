@@ -13,7 +13,9 @@ bind 'set completion-ignore-case on'
 
 export EDITOR="vim"
 export BROWSER="chromium"
-export PICO_SDK_PATH="$HOME/projects/pico-sdk"
+export PICO_SDK_PATH="$HOME/proj/pico-sdk"
 export PATH=$PATH:~/bin
 
-PS1='[\u@\h \[\e[1m\]\W\[\e[0m\]]\$ '
+#\[\e[1m\]\[\e[0m\]
+#PS1='\u@\h \[\e[1m\]\W\[\e[0m\]\$ '
+PS1='\[\e[1m\]\u@\h\[\e[0m\][\[\e[90m\]\w\[\e[0m\]]\$ '
