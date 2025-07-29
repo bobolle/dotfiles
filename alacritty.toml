@@ -1,0 +1,36 @@
+[font]
+size    = 11.5
+
+[font.bold]
+family  = "Monaco"
+style   = "Bold"
+
+[font.bold_italic]
+family  = "Monaco"
+style   = "Bold Italic"
+
+[font.italic]
+family  = "Monaco"
+style   = "Italic"
+
+[font.normal]
+family  = "Monaco"
+style   = "Regular"
+
+[colors.primary]
+background = "#121212"
+foreground = "#EEEEEE"
+
+[colors.normal]
+black   = "#000000"
+red     = "#D04848"
+green   = "#73EC8B"
+yellow  = "#FCDE70"
+blue    = "#7AB2D3"
+magenta = "#AF4D98"
+cyan    = "#6FFFE9"
+white   = "#EEEEEE"
+
+[colors.bright]
+black   =  "#606060"
+white   =  "#F3F3F3"
